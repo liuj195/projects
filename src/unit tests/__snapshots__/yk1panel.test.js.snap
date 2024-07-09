@@ -1,0 +1,385 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Navbar renders correctly 1`] = `
+<div>
+  <div
+    className="usa-grid"
+  >
+    <div
+      className="usa-width-one-whole"
+    >
+      <h3
+        style={
+          Object {
+            "fontWeight": "bold",
+            "textAlign": "center",
+          }
+        }
+      >
+        yK1 Search Parameters
+      </h3>
+    </div>
+  </div>
+  <div
+    className="usa-grid"
+  >
+    <div
+      className="usa-width-one-half"
+      style={
+        Object {
+          "marginRight": 0,
+        }
+      }
+    >
+      <div
+        className="usa-width-one-whole"
+      >
+        <span
+          style={
+            Object {
+              "textAlign": "center",
+            }
+          }
+        >
+          <h4
+            style={
+              Object {
+                "borderBottom": "1px dotted",
+              }
+            }
+          >
+            Tin & Tax Year
+          </h4>
+        </span>
+      </div>
+      <MultiSelect
+        onMultiselectChange={[Function]}
+        selectedOption={Array []}
+      />
+      <br />
+      <br />
+      <br />
+      <fieldset
+        className="usa-fieldset-inputs usa-sans"
+        style={
+          Object {
+            "paddingLeft": "80px",
+          }
+        }
+      >
+        <ul
+          className="usa-unstyled-list"
+        >
+          <RadioButton
+            checked={false}
+            id="SSN"
+            name="typeSelect"
+            onChange={[Function]}
+            self={
+              Object {
+                "checked": false,
+                "id": "SSN",
+              }
+            }
+            style={
+              Object {
+                "display": "inline-block",
+                "paddingLeft": "4%",
+              }
+            }
+          />
+          <RadioButton
+            checked={false}
+            id="EIN"
+            name="typeSelect"
+            onChange={[Function]}
+            self={
+              Object {
+                "checked": false,
+                "id": "EIN",
+              }
+            }
+            style={
+              Object {
+                "display": "inline-block",
+                "paddingLeft": "4%",
+              }
+            }
+          />
+          <RadioButton
+            checked={true}
+            id="BOTH"
+            name="typeSelect"
+            onChange={[Function]}
+            self={
+              Object {
+                "checked": true,
+                "id": "BOTH",
+              }
+            }
+            style={
+              Object {
+                "display": "inline-block",
+                "paddingLeft": "4%",
+              }
+            }
+          />
+        </ul>
+      </fieldset>
+      <label>
+        <div
+          className="tooltip"
+        >
+          Copy Tins Here
+          <span
+            className="tooltiptext"
+          >
+            Separate Tins by comma or by placing each one on a new line
+          </span>
+        </div>
+        <textarea
+          className="form-control"
+          name="textarea1"
+          onChange={[Function]}
+          rows="5"
+          value=""
+        />
+      </label>
+    </div>
+    <div
+      className="usa-width-one-half"
+    >
+      <div
+        className="usa-width-one-whole"
+      >
+        <span
+          style={
+            Object {
+              "textAlign": "center",
+            }
+          }
+        >
+          <h4
+            style={
+              Object {
+                "borderBottom": "1px dotted",
+              }
+            }
+          >
+            Graph
+          </h4>
+        </span>
+      </div>
+      <div
+        className="usa-width-one-whole"
+        style={
+          Object {
+            "borderLeft": "1px dotted",
+            "paddingLeft": "45px",
+            "paddingTop": 28,
+          }
+        }
+      >
+        <div
+          className="usa-width-one-half"
+        >
+          <label
+            htmlFor="interfaceSlider"
+          >
+            Number of Hops:          
+          </label>
+        </div>
+        <div
+          className="usa-width-one-half"
+          style={
+            Object {
+              "margin": 0,
+            }
+          }
+        >
+          <span
+            style={
+              Object {
+                "float": "left",
+              }
+            }
+          >
+             
+            2
+          </span>
+          <input
+            max="10"
+            min="0"
+            name="interfaceSlider"
+            onChange={[Function]}
+            style={
+              Object {
+                "marginLeft": "10%",
+                "marginTop": "-12px",
+                "width": "80%",
+              }
+            }
+            type="range"
+            value={2}
+          />
+        </div>
+        <br />
+         
+        <br />
+         
+        <br />
+         
+        <br />
+        <div
+          className="usa-width-one-half"
+        >
+          <label
+            htmlFor="nodeInput"
+          >
+            Number of Nodes: 
+          </label>
+        </div>
+        <div
+          className="usa-width-one-half"
+          style={
+            Object {
+              "margin": 0,
+            }
+          }
+        >
+          <input
+            max="100"
+            min="0"
+            onChange={[Function]}
+            style={
+              Object {
+                "width": 75,
+              }
+            }
+            type="number"
+            value={10}
+            yname="nodeInput"
+          />
+        </div>
+        <div
+          className="usa-width-one-whole"
+          style={
+            Object {
+              "paddingBottom": "6px",
+              "paddingTop": "47px",
+              "textAlign": "center",
+            }
+          }
+        >
+          <h4>
+             ---Window Select---
+          </h4>
+        </div>
+        <div
+          className="usa-width-one-half"
+          style={
+            Object {
+              "margin": 0,
+            }
+          }
+        >
+          <input
+            checked={true}
+            id="Single Window"
+            name="windowSelect"
+            onChange={[Function]}
+            type="radio"
+            value="Single Window"
+          />
+          <label
+            htmlFor="Single Window"
+          >
+            Single Window
+          </label>
+        </div>
+        <div
+          className="usa-width-one-half"
+          style={
+            Object {
+              "margin": 0,
+            }
+          }
+        >
+          <input
+            checked={false}
+            id="Separate Windows"
+            name="windowSelect"
+            onChange={[Function]}
+            type="radio"
+            value="Separate Windows"
+          />
+          <label
+            htmlFor="Separate Windows"
+          >
+            Separate Windows
+          </label>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div
+    className="usa-width-one-whole"
+    style={
+      Object {
+        "textAlign": "center",
+      }
+    }
+  >
+    <button
+      className="btn btn-lg text-center"
+      onClick={[Function]}
+      style={
+        Object {
+          "backgroundColor": "#2e8540",
+          "color": "white",
+          "paddingBottom": 28,
+          "paddingTop": 24,
+          "width": 79,
+        }
+      }
+      type="submit"
+    >
+      <div
+        style={
+          Object {
+            "marginTop": -5,
+            "position": "absolute",
+          }
+        }
+      >
+        Draw
+      </div>
+    </button>
+    <button
+      className="btn btn-lg text-center"
+      onClick={[Function]}
+      style={
+        Object {
+          "backgroundColor": "#212121",
+          "color": "white",
+          "paddingBottom": 28,
+          "paddingTop": 24,
+          "width": 79,
+        }
+      }
+      type="submit"
+    >
+      <div
+        style={
+          Object {
+            "marginTop": -5,
+            "position": "absolute",
+          }
+        }
+      >
+        Clear
+      </div>
+    </button>
+  </div>
+</div>
+`;

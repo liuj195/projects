@@ -1,0 +1,25 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`RadioButton renders correctly 1`] = `
+<li
+  style={
+    Object {
+      "display": "inline-block",
+    }
+  }
+>
+  <input
+    checked={true}
+    id="Single Window"
+    name="windowSelect"
+    onChange={[Function]}
+    type="radio"
+    value="Single Window"
+  />
+  <label
+    htmlFor="Single Window"
+  >
+    Single Window
+  </label>
+</li>
+`;

@@ -1,0 +1,663 @@
+.MuiSlider-thumb {
+  border-radius: 0 !important;
+}
+
+@font-face {
+  font-family: "FontAwesome";
+  /* src: url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.2.0/fonts/fontawesome-webfont.eot"); */
+  src: url("./fontawesome-free-5.8.1-web/webfonts/fa-solid-900.eot")
+    format("embedded-opentype");
+  src: url("./fontawesome-free-5.8.1-web/webfonts/fa-solid-900.woff")
+    format("woff");
+  src: url("./fontawesome-free-5.8.1-web/webfonts/fa-solid-900.ttf")
+    format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+#layoutRadioButtons label,
+#layoutRadioButtons input {
+  display: inline-block;
+  padding: 10px;
+}
+.usa-width-one-sixth {
+  margin-right: 0 !important;
+}
+
+.exportToExcel {
+  display: none !important;
+}
+
+/*override materialUi tree view*/
+.MuiTypography-body1 {
+  font-size: 14px !important;
+}
+.subtreeItem p {
+  font-size: 13px !important;
+}
+
+.parentTreeNode {
+  font-weight: bold !important;
+}
+.MuiTreeItem-content {
+  border-bottom: 1px solid black !important;
+  border-top-right-radius: 0px !important;
+  border-bottom-right-radius: 0px !important;
+}
+
+/*cytoscape graph nodes and edges*/
+
+.cy-title__p1 {
+  font-size: 11px;
+  font-weight: bold;
+}
+.havenNode {
+  font-size: 11px;
+  font-weight: bold;
+  color: white !important;
+}
+/*RTF Tab*/
+.RTFMultiSelect {
+  float: "left" !important;
+}
+.setGreyBackground {
+  background-color: #bdbdbd !important;
+}
+
+/*React Data Grid*/
+.react-grid-Cell::selection {
+  display: none !important;
+}
+.react-grid-Main {
+  outline: none !important;
+}
+
+.react-grid-HeaderRow {
+  height: 36px !important;
+}
+
+.tools {
+  width: 100%;
+  .btn {
+    float: right;
+  }
+}
+.react-grid-HeaderCell {
+  background-color: #dcdee0 !important;
+  border-right: 1px solid black !important;
+  border-bottom: 1px solid black !important;
+  border-top: 1px solid black !important;
+}
+.react-grid-Container {
+  font-size: 14px;
+}
+.filterClass {
+  background-color: red !important;
+}
+.react-grid-Cell {
+  border-bottom: 1px solid black !important;
+  border-right: 1px solid black !important;
+}
+.react-grid-Row--even {
+  .row-selected {
+    background-color: white !important;
+    color: black !important;
+  }
+}
+.react-grid-Row--odd .react-grid-Cell,
+.row-selected,
+&:hover .react-grid-Cell {
+  background-color: #73b3e7 !important;
+}
+
+/*React Data Grid Tools */
+#rtfContainer .react-grid-Toolbar {
+  border: none !important;
+  padding: 0 !important;
+  padding-left: 10px !important;
+  height: 0px !important;
+}
+#rtfContainer button {
+  margin-top: 2px !important;
+}
+#rtfContainer select {
+  line-height: 20px !important;
+  height: auto !important;
+  margin-top: 0 !important;
+}
+#rtfContainer .tools {
+  padding: 7px !important;
+  padding-top: 12px !important;
+}
+#rtfContainer button {
+  float: right !important;
+}
+.closeIcon {
+  margin-right: 0 !important;
+}
+.totalRows {
+  float: right !important;
+  padding: 10px !important;
+  color: red !important;
+  margin-right: 40px !important;
+}
+.rowsSelected {
+  float: left !important;
+  padding: 10px !important;
+  width: 145px !important;
+}
+.btn {
+  color: white !important;
+}
+.tools > button:nth-child(1) {
+  background-color: #008000 !important;
+  float: none !important;
+}
+.excelButton,
+.addGraphButton {
+  float: none !important;
+}
+
+.botStyledList {
+  height: 53px;
+  padding-top: 25px;
+}
+
+#drawCanvas {
+  z-index: 0 !important;
+}
+#cy > div:nth-child(3) {
+  z-index: 1 !important;
+}
+.cy-panzoom {
+  z-index: 2 !important;
+}
+
+/* correcting uswds.css stylesheet */
+input {
+  -moz-appearance: none;
+  appearance: none;
+  border: 0.1rem solid #5b616b;
+  border-radius: 0;
+  box-sizing: border-box;
+  color: #212121;
+  display: block;
+  font-size: 1.7rem;
+  //height: 4.4rem;
+  line-height: 1.3;
+  margin: 0.2em 0;
+  max-width: 46rem;
+  padding: 1rem 0.7em;
+  width: 100%;
+}
+label {
+  margin-top: 0rem !important;
+}
+
+.form-group input {
+  border: 0 solid #5b616b;
+  border-radius: 0;
+  box-sizing: border-box;
+  color: #212121;
+  display: block;
+  font-size: 1.5rem;
+  height: auto;
+  line-height: 100%;
+  margin: 0;
+  max-width: auto;
+  padding: 4px;
+  width: 100%;
+}
+
+.usa-nav-submenu,
+.usa-accordion-button:focus {
+  background-color: black !important;
+  padding: 14px !important;
+}
+.happyIE11Button {
+  width: auto;
+  width: initial;
+}
+#outerCyDiv {
+  z-index: 1 !important;
+}
+#zoomCanvas {
+  z-index: 1;
+}
+canvas {
+  z-index: 1 !important;
+  /* padding-left: 35px !important; */
+}
+#zoom {
+  padding-left: 0 !important;
+  border: 1px black solid;
+  box-shadow: 5px 5px 10px #1e1e1e;
+  border-radius: 200px;
+}
+#zoom:hover {
+  transform: scale(1.5);
+}
+.loader {
+  border: 16px solid #f3f3f3;
+  border-radius: 50%;
+  border-top: 16px solid #3498db;
+  width: 120px;
+  height: 120px;
+  -webkit-animation: spin 2s linear infinite; /* Safari */
+  animation: spin 2s linear infinite;
+}
+.cy-panzoom-zoom-button,
+.cy-panzoom-slider-handle {
+  width: auto !important;
+  height: auto !important;
+}
+
+/* Safari */
+@-webkit-keyframes spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+  }
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+.subsubMenu {
+  left: 200px;
+  top: 0px;
+}
+.initSlideClass {
+  display: none;
+}
+
+.slideOutModal {
+  visibility: hidden;
+  background: black;
+  color: white;
+  width: 163px;
+  height: 200px;
+  border: 2px solid grey;
+  top: -5px;
+  position: absolute;
+  right: 6px;
+  top: 95px;
+  border-radius: 5px;
+  -webkit-animation-name: slideOut;
+  -webkit-animation-duration: 0.4s;
+  animation-name: slideOut;
+  animation-duration: 0.4s;
+}
+
+.slideInModal {
+  background: black;
+  color: white;
+  display: block;
+  width: 163px;
+  height: 200px;
+  border: 2px solid grey;
+  top: -5px;
+  position: absolute;
+  right: 6px;
+  top: 95px;
+  border-radius: 5px;
+  -webkit-animation-name: slideIn;
+  -webkit-animation-duration: 0.4s;
+  animation-name: slideIn;
+  animation-duration: 0.4s;
+}
+@-webkit-keyframes slideIn {
+  from {
+    right: -100px;
+  }
+  to {
+    right: 6px;
+  }
+}
+
+@keyframes slideIn {
+  from {
+    right: -100px;
+  }
+  to {
+    right: 6px;
+  }
+}
+@-webkit-keyframes slideOut {
+  from {
+    right: 6px;
+    opacity: 1;
+    visibility: visible;
+  }
+  to {
+    right: -130px;
+    opacity: 0;
+    visibility: hidden;
+  }
+}
+
+@keyframes slideOut {
+  from {
+    right: 6px;
+    opacity: 1;
+    visibility: visible;
+  }
+  to {
+    right: -130px;
+    opacity: 0;
+    visibility: hidden;
+  }
+}
+
+.css-19bqh2r:hover {
+  color: black !important;
+  -webkit-transition: color 100ms ease-in;
+  -moz-transition: color 100ms ease-in;
+  -o-transition: color 100ms ease-in;
+  transition: color 100ms ease-in;
+}
+
+.customSubMenu {
+  border: 1px solid grey;
+  background-color: black !important;
+  position: absolute;
+  right: -14em;
+  top: 0em;
+  width: 21.5rem;
+  margin-top: 0px;
+  margin-bottom: 0;
+  list-style-type: none;
+  margin: 0;
+  padding: 14px !important;
+}
+.menuItem:hover {
+  cursor: pointer;
+}
+/* .rc-menu li div {
+  z-index: 10;
+} */
+.rc-menu {
+  margin-top: 0 !important;
+}
+.rc-menu-horizontal {
+  border-bottom: none;
+}
+.rc-menu-submenu-popup {
+  z-index: 10;
+}
+.rc-menu-item-active,
+.rc-menu-submenu-active > .rc-menu-submenu-title {
+  background-color: black !important;
+  color: white !important;
+}
+.rc-menu-submenu-disabled .rc-menu-submenu-title {
+  color: #777 !important;
+}
+.usa-accordion-button {
+  padding: 14px !important;
+  background-color: #205493 !important;
+}
+.rc-menu-item-selected {
+  background-color: #205493;
+}
+.rc-menu,
+.rc-menu-submenu-title {
+  background-color: #205493 !important;
+  color: white;
+  font-weight: bold;
+}
+.switchBackground {
+  background-image: url(./img/angle-arrow-down.svg) !important;
+}
+nav {
+  float: left !important;
+  padding-top: 0 !important;
+  max-height: 43px !important;
+}
+#disclaimerDiv {
+  position: relative;
+  z-index: 9999;
+}
+.modal {
+  background-color: rgba(0, 0, 0, 0.8);
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.disclaimerDiv {
+  background-color: white;
+  width: 50%;
+  border-radius: 5px;
+  padding: 2%;
+}
+#midLevelDiv input[type="button"] {
+  height: 61%;
+  padding-top: 0px;
+  padding-bottom: 0px;
+}
+.close {
+  margin-right: 15%;
+  margin-top: 11%;
+  color: black;
+  float: right;
+  font-size: 30px;
+  z-index: 999999;
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.usa-nav-container,
+.usa-nav,
+.usa-header,
+.navigation {
+  max-width: 100% !important;
+  width: 100% !important;
+  padding-left: 0 !important;
+}
+.usa-grid {
+  max-width: 100% !important;
+  width: 100% !important;
+}
+header,
+nav {
+  background-color: #205493 !important;
+}
+.background-image {
+  color: red;
+}
+.dropDownItem:hover {
+  background-color: #205493;
+  /* border-left: 4px solid #205493;
+  height: 20px; */
+}
+.dropDownItem {
+  border-bottom: 1px solid grey !important;
+}
+.subTabs {
+  display: block !important;
+  text-align: center;
+}
+.botli span {
+  padding-top: 9px;
+}
+.botli div {
+  padding-bottom: 5px;
+}
+input[type="range"]::-ms-track {
+  width: 100%;
+  height: 5px;
+
+  /*remove bg colour from the track, we'll use ms-fill-lower and ms-fill-upper instead */
+  background: transparent;
+
+  /*leave room for the larger thumb to overflow with a transparent border */
+  border-color: transparent;
+  border-width: 6px 0;
+
+  /*remove default tick marks*/
+  color: transparent;
+}
+
+input[type="range"]::-ms-fill-lower {
+  background: #777;
+  border-radius: 10px;
+}
+input[type="range"]::-ms-fill-upper {
+  background: #ddd;
+  border-radius: 10px;
+}
+input[type="range"]::-ms-thumb {
+  border: none;
+  height: 16px;
+  width: 16px;
+  border-radius: 50%;
+  background: #205493;
+}
+input[type="range"]:focus::-ms-fill-lower {
+  background: #888;
+}
+input[type="range"]:focus::-ms-fill-upper {
+  background: #ccc;
+}
+.RRT__showmore {
+  z-index: 99;
+}
+
+.RRT__tab,
+.RRT__showmore-label,
+.topLevelTabs {
+  background-color: #cd2026;
+  color: white;
+}
+.botStyledList li {
+  height: 24px !important;
+}
+
+.RRT__panel {
+  padding: 12px !important;
+  border: none !important;
+  padding-top: 6px !important;
+  /* margin-top: -34px !important; */
+  z-index: -1;
+}
+.RRT__panel .panel {
+  padding-bottom: 0 !important;
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+}
+
+.subTabs .tab {
+  background-color: #aeb0b5;
+  display: inline-block !important;
+}
+.RRT__tab--selected {
+  background-color: #212121 !important;
+}
+
+input[type="range"]::-webkit-slider-runnable-track {
+  width: 300px;
+  height: 5px;
+  background: #ddd;
+  border: none;
+  border-radius: 3px;
+}
+input[type="checkbox"] {
+  -webkit-appearance: checkbox;
+  width: 18px;
+  height: 20px;
+  margin-right: 9px;
+  padding: 0px;
+  /* float: left; */
+  display: inline-block;
+}
+input[type="range"]::-webkit-slider-thumb {
+  /* -webkit-appearance: none; */
+  border: none;
+  height: 16px;
+  width: 16px;
+  border-radius: 50%;
+  background: #777;
+  margin-top: -4px;
+}
+
+input[type="range"]:focus {
+  outline: none;
+}
+/* .muliSelect div {
+  height: 75%;
+} */
+input[type="range"]:focus::-webkit-slider-runnable-track {
+  background: #ccc;
+}
+
+/* Tooltip container */
+.tooltip {
+  position: relative;
+  display: inline-block;
+}
+.tstText {
+  height: 120px !important;
+}
+.tooltip {
+  position: relative;
+  display: inline-block;
+}
+
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 200px;
+  background-color: #555;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+  position: absolute;
+  z-index: 1;
+  bottom: 125%;
+  left: 50%;
+  margin-left: -60px;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.tooltip .tooltiptext::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #555 transparent transparent transparent;
+}
+
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+  opacity: 1;
+}
+
+@keyframes modalopen {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
