@@ -1,0 +1,19 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Navbar renders correctly 1`] = `
+<Tabs
+  allowRemove={false}
+  items={Array []}
+  onChange={[Function]}
+  onRemove={[Function]}
+  removeActiveOnly={false}
+  resizeThrottle={100}
+  selectedTabKey={0}
+  showInkBar={false}
+  showMore={true}
+  showMoreLabel="..."
+  tabsWrapperClass="topLevelTabs"
+  transform={true}
+  transformWidth={800}
+/>
+`;

@@ -1,0 +1,64 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Navbar renders correctly 1`] = `
+<header
+  className="usa-header usa-header-basic"
+  role="banner"
+>
+  <div
+    className="usa-nav-container"
+  >
+    <nav
+      className="usa-nav"
+      role="navigation"
+    >
+      <ul
+        className="usa-nav-primary usa-accordion"
+      >
+        <DropdownItem
+          isDisabled={false}
+          itemList={
+            Array [
+              "Save Graph",
+              "Load Graph",
+              "Print Graph",
+            ]
+          }
+          name="File"
+          onChangeLayout={[Function]}
+          onLegendClick={[Function]}
+          onSaveFile={[Function]}
+          onUpload={[Function]}
+          printFile={[Function]}
+          styleProps={
+            Object {
+              "color": "white",
+            }
+          }
+          subMenus={
+            Object {
+              "Layout": Array [
+                "Hierarchic(Dagre)",
+                "Circular",
+                "Cola",
+                "Grid",
+              ],
+              "Show_Hide": Array [
+                "Names",
+                "TIN",
+                "Tax Period",
+              ],
+            }
+          }
+          user={
+            Object {
+              "access": Array [],
+              "userID": "abc",
+            }
+          }
+        />
+      </ul>
+    </nav>
+  </div>
+</header>
+`;

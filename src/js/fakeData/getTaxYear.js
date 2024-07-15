@@ -1,0 +1,52 @@
+export const getTaxYearsData = {
+  taxYearDataList: [
+    {
+      taxYear: "2018",
+      groupNames: ["YK1"],
+      displayComments: "K1 data Cycle 44",
+      dataLoadDat: null,
+      dataLoadCycle: null,
+      isPartial: true,
+    },
+    {
+      taxYear: "2015",
+      groupNames: ["YK1"],
+      displayComments: null,
+      dataLoadDat: null,
+      dataLoadCycle: null,
+      isPartial: false,
+    },
+    {
+      taxYear: "2014",
+      groupNames: ["YK1"],
+      displayComments: null,
+      dataLoadDat: null,
+      dataLoadCycle: null,
+      isPartial: false,
+    },
+    {
+      taxYear: "2012",
+      groupNames: ["YK1"],
+      displayComments: null,
+      dataLoadDat: null,
+      dataLoadCycle: null,
+      isPartial: false,
+    },
+    {
+      taxYear: "2011",
+      groupNames: ["YK1"],
+      displayComments: null,
+      dataLoadDat: null,
+      dataLoadCycle: null,
+      isPartial: false,
+    },
+    {
+      taxYear: "2011",
+      groupNames: ["YK1"],
+      displayComments: null,
+      dataLoadDat: null,
+      dataLoadCycle: null,
+      isPartial: false,
+    },
+  ],
+};

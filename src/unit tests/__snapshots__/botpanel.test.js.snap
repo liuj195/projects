@@ -1,0 +1,398 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Navbar renders correctly 1`] = `
+<div>
+  <div
+    className="usa-grid"
+  >
+    <div
+      className="usa-width-one-whole"
+    >
+      <h3
+        style={
+          Object {
+            "fontWeight": "bold",
+            "textAlign": "center",
+          }
+        }
+      >
+        Build Out Tool
+      </h3>
+    </div>
+  </div>
+  <div
+    className="usa-grid"
+  >
+    <div
+      className="usa-width-one-half"
+      style={
+        Object {
+          "marginRight": 0,
+        }
+      }
+    >
+      <div
+        className="usa-width-one-whole"
+      >
+        <span
+          style={
+            Object {
+              "textAlign": "center",
+            }
+          }
+        >
+          <h4
+            style={
+              Object {
+                "borderBottom": "1px dotted",
+              }
+            }
+          >
+            Taxpayer Information
+          </h4>
+        </span>
+      </div>
+      <br />
+      <br />
+      <div
+        className="usa-width-one-half"
+        style={
+          Object {
+            "paddingBottom": 28,
+            "paddingTop": "28px",
+          }
+        }
+      >
+        <label>
+          TIN & TAX PERIOD
+          <input
+            onChange={[Function]}
+            style={
+              Object {
+                "width": "250px",
+              }
+            }
+            value=""
+          />
+        </label>
+      </div>
+      <div
+        className="usa-width-one-fourth"
+        style={
+          Object {
+            "paddingTop": "28px",
+          }
+        }
+      >
+        <label>
+          MFT
+          <input
+            onChange={[Function]}
+            style={
+              Object {
+                "width": "75px",
+              }
+            }
+            value=""
+          />
+        </label>
+      </div>
+      <h4
+        className="usa-width-one-whole"
+        style={
+          Object {
+            "fontWeight": "bold",
+            "paddingBottom": 28,
+            "textAlign": "center",
+          }
+        }
+      >
+        Build Out Tool Information
+      </h4>
+      <div
+        className="usa-width-one-third"
+        style={
+          Object {
+            "paddingTop": 9,
+          }
+        }
+      >
+        <span>
+          Examination Results $
+        </span>
+      </div>
+      <div
+        className="usa-width-one-fourth"
+      >
+        <input
+          id="RESULTS"
+          name="RESULTS"
+          onChange={[Function]}
+          type="number"
+          value=""
+        />
+      </div>
+    </div>
+    <div
+      className="usa-width-one-half"
+    >
+      <span
+        style={
+          Object {
+            "textAlign": "center",
+          }
+        }
+      >
+        <h4
+          style={
+            Object {
+              "borderBottom": "1px dotted",
+            }
+          }
+        >
+          Optimize Build Out Tool
+        </h4>
+      </span>
+      <div
+        className="usa-width-one-third"
+        style={
+          Object {
+            "borderLeft": "1px dotted",
+            "paddingLeft": "45px",
+          }
+        }
+      >
+        <ul
+          className="usa-unstyled-list"
+        >
+          <RadioButton
+            checked={true}
+            id="ALLOCATE"
+            name="typeSelect"
+            onChange={[Function]}
+          />
+          <RadioButton
+            checked={false}
+            id="ASSESS"
+            name="typeSelect"
+            onChange={[Function]}
+          />
+          <RadioButton
+            checked={false}
+            id="APPROX"
+            name="typeSelect"
+            onChange={[Function]}
+          />
+          <RadioButton
+            checked={false}
+            id="MINOWN"
+            name="typeSelect"
+            onChange={[Function]}
+          />
+        </ul>
+      </div>
+      <div
+        className="usa-width-two-thirds"
+      >
+        <ul
+          className="usa-unstyled-list botli"
+          style={
+            Object {
+              "marginTop": "17px",
+            }
+          }
+        >
+          <div
+            className="usa-width-one-whole"
+          >
+            <li>
+              <div
+                className="usa-width-one-half"
+              >
+                <input
+                  disabled={false}
+                  id="0"
+                  name="allocateInput"
+                  onChange={[Function]}
+                  type="number"
+                  value={0}
+                />
+              </div>
+              <div
+                className="usa-width-one-half"
+              >
+                <span
+                  style={
+                    Object {
+                      "float": "left",
+                    }
+                  }
+                >
+                  % Examination Results
+                </span>
+              </div>
+            </li>
+          </div>
+          <div
+            className="usa-width-one-whole"
+          >
+            <li>
+              <div
+                className="usa-width-one-half"
+              >
+                <input
+                  disabled={true}
+                  id="1"
+                  name="assessInput"
+                  onChange={[Function]}
+                  type="number"
+                  value={0}
+                />
+              </div>
+              <div
+                className="usa-width-one-half"
+              >
+                <span
+                  style={
+                    Object {
+                      "float": "left",
+                    }
+                  }
+                >
+                  Tax Per Investor
+                </span>
+              </div>
+            </li>
+          </div>
+          <div
+            className="usa-width-one-whole"
+          >
+            <li>
+              <div
+                className="usa-width-one-half"
+              >
+                <input
+                  disabled={true}
+                  id="2"
+                  name="approxInput"
+                  onChange={[Function]}
+                  type="number"
+                  value={0}
+                />
+              </div>
+              <div
+                className="usa-width-one-half"
+              >
+                <span
+                  style={
+                    Object {
+                      "float": "left",
+                    }
+                  }
+                >
+                  Investor Reports
+                </span>
+              </div>
+            </li>
+          </div>
+          <div
+            className="usa-width-one-whole"
+          >
+            <li>
+              <div
+                className="usa-width-one-half"
+              >
+                <input
+                  disabled={true}
+                  id="3"
+                  name="minimumInput"
+                  onChange={[Function]}
+                  type="number"
+                  value={0}
+                />
+              </div>
+              <div
+                className="usa-width-one-half"
+              >
+                <span
+                  style={
+                    Object {
+                      "float": "left",
+                    }
+                  }
+                >
+                  %
+                </span>
+              </div>
+            </li>
+          </div>
+        </ul>
+      </div>
+    </div>
+    <div
+      className="usa-width-one-whole"
+      style={
+        Object {
+          "textAlign": "center",
+        }
+      }
+    >
+      <button
+        className="btn btn-lg text-center"
+        onClick={[Function]}
+        style={
+          Object {
+            "backgroundColor": "#2e8540",
+            "color": "white",
+          }
+        }
+        type="submit"
+      >
+        Produce
+        <br />
+        Reports
+      </button>
+      <button
+        className="btn btn-lg text-center"
+        onClick={[Function]}
+        style={
+          Object {
+            "backgroundColor": "#2e8540",
+            "color": "white",
+          }
+        }
+        type="submit"
+      >
+        Produce
+        <br />
+        Reports & Graph
+      </button>
+      <button
+        className="btn btn-lg text-center"
+        onClick={[Function]}
+        style={
+          Object {
+            "backgroundColor": "#212121",
+            "color": "white",
+            "paddingBottom": 28,
+            "paddingTop": 24,
+            "width": 79,
+          }
+        }
+        type="submit"
+      >
+        <div
+          style={
+            Object {
+              "marginTop": -5,
+              "position": "absolute",
+            }
+          }
+        >
+          Clear
+        </div>
+      </button>
+    </div>
+  </div>
+</div>
+`;

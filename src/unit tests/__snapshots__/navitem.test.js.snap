@@ -1,0 +1,301 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Navitems render correctly 1`] = `
+Array [
+  <input
+    id="myInput"
+    onChange={[Function]}
+    style={
+      Object {
+        "display": "none",
+      }
+    }
+    type="file"
+  />,
+  <li
+    style={null}
+  >
+    <button
+      aria-controls="basic-nav-section-one"
+      aria-expanded={false}
+      className="usa-accordion-button usa-nav-link switchBackground"
+      disabled={true}
+      onBlur={[Function]}
+      onClick={[Function]}
+      style={
+        Object {
+          "color": "grey",
+        }
+      }
+    >
+      <span>
+        item
+      </span>
+    </button>
+    <ul
+      aria-hidden={true}
+      className="usa-nav-submenu"
+      id="basic-nav-section-one"
+      onMouseLeave={[Function]}
+    >
+      <div
+        className="testing"
+      >
+        <li
+          className="dropDownItem"
+          onMouseDown={[Function]}
+          onMouseEnter={[Function]}
+          style={
+            Object {
+              "color": "white",
+              "marginLeft": 4,
+            }
+          }
+        >
+          testing
+        </li>
+      </div>
+    </ul>
+  </li>,
+]
+`;
+
+exports[`Navitems render correctly 2`] = `
+Array [
+  <input
+    id="myInput"
+    onChange={[Function]}
+    style={
+      Object {
+        "display": "none",
+      }
+    }
+    type="file"
+  />,
+  <li
+    style={null}
+  >
+    <button
+      aria-controls="basic-nav-section-one"
+      aria-expanded={true}
+      className="usa-accordion-button usa-nav-link switchBackground"
+      disabled={true}
+      onBlur={[Function]}
+      onClick={[Function]}
+      style={
+        Object {
+          "color": "grey",
+        }
+      }
+    >
+      <span>
+        item
+      </span>
+    </button>
+    <ul
+      aria-hidden={false}
+      className="usa-nav-submenu"
+      id="basic-nav-section-one"
+      onMouseLeave={[Function]}
+    >
+      <div
+        className="testing"
+      >
+        <li
+          className="dropDownItem"
+          onMouseDown={[Function]}
+          onMouseEnter={[Function]}
+          style={
+            Object {
+              "color": "white",
+              "marginLeft": 4,
+            }
+          }
+        >
+          testing
+        </li>
+      </div>
+    </ul>
+  </li>,
+]
+`;
+
+exports[`Navitems render correctly 3`] = `
+Array [
+  <input
+    id="myInput"
+    onChange={[Function]}
+    style={
+      Object {
+        "display": "none",
+      }
+    }
+    type="file"
+  />,
+  <li
+    style={null}
+  >
+    <button
+      aria-controls="basic-nav-section-one"
+      aria-expanded={false}
+      className="usa-accordion-button usa-nav-link switchBackground"
+      disabled={true}
+      onBlur={[Function]}
+      onClick={[Function]}
+      style={
+        Object {
+          "color": "grey",
+        }
+      }
+    >
+      <span>
+        item
+      </span>
+    </button>
+    <ul
+      aria-hidden={true}
+      className="usa-nav-submenu"
+      id="basic-nav-section-one"
+      onMouseLeave={[Function]}
+    >
+      <div
+        className="testing"
+      >
+        <li
+          className="dropDownItem"
+          onMouseDown={[Function]}
+          onMouseEnter={[Function]}
+          style={
+            Object {
+              "color": "white",
+              "marginLeft": 4,
+            }
+          }
+        >
+          testing
+        </li>
+      </div>
+    </ul>
+  </li>,
+]
+`;
+
+exports[`Navitems render correctly 4`] = `
+Array [
+  <input
+    id="myInput"
+    onChange={[Function]}
+    style={
+      Object {
+        "display": "none",
+      }
+    }
+    type="file"
+  />,
+  <li
+    style={null}
+  >
+    <button
+      aria-controls="basic-nav-section-one"
+      aria-expanded={false}
+      className="usa-accordion-button usa-nav-link switchBackground"
+      disabled={true}
+      onBlur={[Function]}
+      onClick={[Function]}
+      style={
+        Object {
+          "color": "grey",
+        }
+      }
+    >
+      <span>
+        item
+      </span>
+    </button>
+    <ul
+      aria-hidden={true}
+      className="usa-nav-submenu"
+      id="basic-nav-section-one"
+      onMouseLeave={[Function]}
+    >
+      <div
+        className="testing"
+      >
+        <li
+          className="dropDownItem"
+          onMouseDown={[Function]}
+          onMouseEnter={[Function]}
+          style={
+            Object {
+              "color": "white",
+              "marginLeft": 4,
+            }
+          }
+        >
+          testing
+        </li>
+      </div>
+    </ul>
+  </li>,
+]
+`;
+
+exports[`Navitems render correctly 5`] = `
+Array [
+  <input
+    id="myInput"
+    onChange={[Function]}
+    style={
+      Object {
+        "display": "none",
+      }
+    }
+    type="file"
+  />,
+  <li
+    style={null}
+  >
+    <button
+      aria-controls="basic-nav-section-one"
+      aria-expanded={false}
+      className="usa-accordion-button usa-nav-link switchBackground"
+      disabled={true}
+      onBlur={[Function]}
+      onClick={[Function]}
+      style={
+        Object {
+          "color": "grey",
+        }
+      }
+    >
+      <span>
+        item
+      </span>
+    </button>
+    <ul
+      aria-hidden={true}
+      className="usa-nav-submenu"
+      id="basic-nav-section-one"
+      onMouseLeave={[Function]}
+    >
+      <div
+        className="testing"
+      >
+        <li
+          className="dropDownItem"
+          onMouseDown={[Function]}
+          onMouseEnter={[Function]}
+          style={
+            Object {
+              "color": "white",
+              "marginLeft": 4,
+            }
+          }
+        >
+          testing
+        </li>
+      </div>
+    </ul>
+  </li>,
+]
+`;

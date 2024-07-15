@@ -1,0 +1,533 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Navbar renders correctly 1`] = `
+<div>
+  <input
+    id="myInput"
+    onChange={[Function]}
+    style={
+      Object {
+        "display": "none",
+      }
+    }
+    type="file"
+  />
+  <div
+    className="usa-grid"
+  >
+    <div
+      className="usa-width-one-whole"
+    >
+      <h3
+        style={
+          Object {
+            "fontWeight": "bold",
+            "textAlign": "center",
+          }
+        }
+      >
+        TST Structure Tool
+      </h3>
+    </div>
+  </div>
+  <div
+    className="usa-grid"
+  >
+    <div
+      className="usa-width-one-half"
+      style={
+        Object {
+          "marginRight": 0,
+        }
+      }
+    >
+      <span
+        style={
+          Object {
+            "textAlign": "center",
+          }
+        }
+      >
+        <h4
+          style={
+            Object {
+              "borderBottom": "1px dotted",
+            }
+          }
+        >
+          Tier Reports
+        </h4>
+      </span>
+      <div
+        className="usa-width-one-half"
+        style={
+          Object {
+            "marginRight": 0,
+          }
+        }
+      >
+        <label>
+          <div
+            className="tooltip"
+          >
+            <span
+              style={
+                Object {
+                  "fontWeight": "bold",
+                }
+              }
+            >
+              Taxpayer Information
+            </span>
+            <br />
+            Enter Tin and Tax Period/Tax Year
+            <span
+              className="tooltiptext"
+            >
+              Enter Tins followed by a space and a Tax period OR Tax Year
+            </span>
+          </div>
+          <textarea
+            className="form-control"
+            name="textarea1"
+            onChange={[Function]}
+            placeholder="E.g. XXXXXXXXXX YYYY"
+            rows="5"
+            style={
+              Object {
+                "width": "250px",
+              }
+            }
+            value=""
+          />
+        </label>
+      </div>
+      <div
+        className="usa-width-one-half"
+        style={
+          Object {
+            "marginTop": "38px",
+          }
+        }
+      >
+        <fieldset
+          className="usa-fieldset-inputs usa-sans"
+        >
+          <ul
+            className="usa-unstyled-list"
+          >
+            <CheckBox
+              checked={false}
+              id="COMPLETE"
+              name="Complete Investor Listing"
+              onChange={[Function]}
+            />
+            <CheckBox
+              checked={false}
+              id="TERMINAL"
+              name="Terminal Investor Ownership Report"
+              onChange={[Function]}
+            />
+            <CheckBox
+              checked={false}
+              id="SUMMARY"
+              name="Key Case Summary Report"
+              onChange={[Function]}
+            />
+          </ul>
+        </fieldset>
+      </div>
+      <div
+        className="usa-width-one-whole"
+        style={
+          Object {
+            "textAlign": "center",
+          }
+        }
+      >
+        <br />
+        <span
+          style={
+            Object {
+              "fontWeight": "bold",
+            }
+          }
+        >
+          ---Stopping Rules---
+        </span>
+        <br />
+        <br />
+      </div>
+      <div
+        className="usa-width-one-whole"
+      >
+        <div
+          className="usa-width-one-half"
+        >
+          <input
+            checked={true}
+            id="POTENTIAL"
+            name="stoppingRules"
+            onChange={[Function]}
+            type="radio"
+            value="POTENTIAL"
+          />
+          <label
+            htmlFor="POTENTIAL"
+          >
+            Potential Adj $
+          </label>
+        </div>
+        <div
+          className="usa-width-one-third"
+        >
+          <input
+            disabled={false}
+            id="0"
+            onChange={[Function]}
+            style={
+              Object {
+                "marginTop": "17px",
+                "width": "150px",
+              }
+            }
+            type="number"
+            value={0}
+          />
+        </div>
+        <br />
+        <br />
+        <br />
+        <br />
+        <span
+          style={
+            Object {
+              "fontWeight": "bold",
+            }
+          }
+        >
+          ----OR----
+        </span>
+      </div>
+      <div
+        className="usa-width-one-whole"
+      >
+        <div
+          className="usa-width-one-half"
+        >
+          <input
+            checked={false}
+            id="OWNERSHIP"
+            name="stoppingRules"
+            onChange={[Function]}
+            type="radio"
+            value="OWNERSHIP"
+          />
+          <label
+            htmlFor="OWNERSHIP"
+          >
+            Ownership Tolerance
+          </label>
+        </div>
+        <div
+          className="usa-width-one-third"
+        >
+          <input
+            disabled={true}
+            id="1"
+            onChange={[Function]}
+            style={
+              Object {
+                "marginTop": "17px",
+                "width": "150px",
+              }
+            }
+            type="number"
+            value={0}
+          />
+        </div>
+        <br />
+        <br />
+        <br />
+        <br />
+      </div>
+    </div>
+    <div
+      className="usa-width-one-half"
+    >
+      <span
+        style={
+          Object {
+            "textAlign": "center",
+          }
+        }
+      >
+        <h4
+          style={
+            Object {
+              "borderBottom": "1px dotted",
+            }
+          }
+        >
+          Graphs
+        </h4>
+      </span>
+      <div
+        style={
+          Object {
+            "borderLeft": "1px dotted",
+            "paddingLeft": "45px",
+          }
+        }
+      >
+        <div
+          className="usa-width-one-whole"
+        >
+          <div
+            className="usa-width-one-third"
+          >
+            <input
+              checked={true}
+              id="TOP"
+              name="graphs"
+              onChange={[Function]}
+              type="radio"
+              value="TOP"
+            />
+            <label
+              htmlFor="TOP"
+            >
+              Graph Top
+            </label>
+          </div>
+          <div
+            className="usa-width-one-fourth"
+          >
+            <input
+              disabled={false}
+              id="0"
+              onChange={[Function]}
+              style={
+                Object {
+                  "marginTop": "17px",
+                  "width": "75px",
+                }
+              }
+              type="number"
+              value={0}
+            />
+          </div>
+          <div
+            className="usa-width-one-fourth"
+            style={
+              Object {
+                "marginTop": "17px",
+              }
+            }
+          >
+            Terminal Investors
+          </div>
+          <br />
+          <br />
+        </div>
+        <div
+          className="usa-width-one-whole"
+        >
+          <div
+            className="usa-width-one-third"
+          >
+            <input
+              checked={false}
+              id="INVERTORS"
+              name="graphs"
+              onChange={[Function]}
+              type="radio"
+              value="INVERTORS"
+            />
+            <label
+              htmlFor="INVERTORS"
+            >
+              Graph Inverters With
+            </label>
+          </div>
+          <div
+            className="usa-width-one-fourth"
+          >
+            <input
+              disabled={true}
+              id="1"
+              onChange={[Function]}
+              style={
+                Object {
+                  "marginTop": "17px",
+                  "width": "75px",
+                }
+              }
+              type="number"
+              value={0}
+            />
+          </div>
+          <div
+            className="usa-width-one-fourth"
+            style={
+              Object {
+                "marginTop": "17px",
+              }
+            }
+          >
+            % Ownership
+          </div>
+        </div>
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <div
+          style={
+            Object {
+              "marginTop": 30,
+            }
+          }
+        >
+          <input
+            checked={false}
+            id="GroupNode"
+            onChange={[Function]}
+            style={
+              Object {
+                "marginTop": 0,
+              }
+            }
+            type="checkbox"
+            value="GroupNode"
+          />
+          <label
+            htmlFor="GroupNode"
+            style={
+              Object {
+                "marginTop": 0,
+              }
+            }
+          >
+            Include Group Node for Other Investors
+          </label>
+        </div>
+        <div
+          className="usa-width-one-whole"
+          style={
+            Object {
+              "paddingBottom": "6px",
+              "paddingTop": "47px",
+              "textAlign": "center",
+            }
+          }
+        >
+          <h4>
+             ---Window Select---
+          </h4>
+        </div>
+        <ul
+          className="usa-unstyled-list"
+        >
+          <div
+            className="usa-width-one-half"
+          >
+            <RadioButton
+              checked={true}
+              id="Single Window"
+              name="windowSelect"
+              onChange={[Function]}
+              style={
+                Object {
+                  "display": "inline-block",
+                }
+              }
+              value="Single Window"
+            />
+          </div>
+          <div
+            className="usa-width-one-half"
+          >
+            <RadioButton
+              checked={false}
+              id="Separate Windows"
+              name="windowSelect"
+              onChange={[Function]}
+              style={
+                Object {
+                  "display": "inline-block",
+                }
+              }
+              value="Separate Windows"
+            />
+          </div>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div
+    style={
+      Object {
+        "textAlign": "center",
+      }
+    }
+  >
+    <button
+      className="btn btn-lg text-center"
+      onClick={[Function]}
+      style={
+        Object {
+          "backgroundColor": "#2e8540",
+          "color": "white",
+        }
+      }
+      type="submit"
+    >
+      Produce
+      <br />
+      Reports
+    </button>
+    <button
+      className="btn btn-lg text-center"
+      style={
+        Object {
+          "backgroundColor": "#2e8540",
+          "color": "white",
+        }
+      }
+      type="submit"
+    >
+      Produce
+      <br />
+      Reports & Graph
+    </button>
+    <button
+      className="btn btn-lg text-center"
+      style={
+        Object {
+          "backgroundColor": "#212121",
+          "color": "white",
+          "paddingBottom": 28,
+          "paddingTop": 24,
+          "width": 79,
+        }
+      }
+      type="submit"
+    >
+      <div
+        style={
+          Object {
+            "marginTop": -5,
+            "position": "absolute",
+          }
+        }
+      >
+        Clear
+      </div>
+    </button>
+  </div>
+</div>
+`;
