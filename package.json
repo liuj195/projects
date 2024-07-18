@@ -21,7 +21,7 @@
     "cytoscape-edge-editing": "^2.0.1",
     "cytoscape-node-html-label": "^1.1.3",
     "cytoscape-panzoom": "^2.5.3",
-    "cytoscape-popper": "^1.0.7",
+    "cytoscape-popper": "^10.4.0",
     "es6-promise": "^4.2.8",
     "file-saver": "^2.0.2",
     "html-to-image": "^1.3.21",
@@ -49,6 +49,7 @@
     "reactstrap": "^8.9.0",
     "redux": "^5.0.1",
     "tippy.js": "^4.3.5",
+    "typescript": "^5.5.3",
     "uswds": "^1.6.9",
     "xlsx": "^0.14.5"
   },
