@@ -1,6 +1,7 @@
 import React from "react";
 import Select from "react-select";
-import makeAnimated from "react-select/lib/animated";
+//import makeAnimated from "react-select/lib/animated";
+import makeAnimated from "react-select/animated";
 
 const MultiSelectBase = ({
   selectedOption,
