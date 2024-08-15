@@ -1,5 +1,6 @@
 import React from "react";
 import ReactDOM from "react-dom";
+import { createRoot } from "react-dom/client";
 import App from "./App";
 import * as serviceWorker from "./serviceWorker";
 import Cookies from "js-cookie";
@@ -10,6 +11,8 @@ import "./css/uswds/dist/css/uswds.css";
 import { Provider } from "react-redux";
 import { store } from "./redux/store";
 import YK1 from "./js/yk1/yk1";
+import "./scripts/yk1SuiteExternalData";
+import "./scripts/yk1ErrorMessages";
 
 let cookieToken = Cookies.get("YK1Token");
 let cookieUserIP = Cookies.get("UserIP");
@@ -28,6 +31,7 @@ if (!cookieToken && !ReactIsInDevelomentMode()) {
 if (!cookieUserIP && !ReactIsInDevelomentMode()) {
   window.location.replace(window.yk1URL);
 }
+
 let fields = [];
 if (typeof cookieToken !== "undefined" && cookieToken !== null) {
   fields = cookieToken.split("|");
@@ -99,8 +103,11 @@ window.timeElapsed = function() {
   let elapsed = Date.now() - window.start;
   return elapsed;
 };
-//console.log("yK1 version: " + fields[3]);
-ReactDOM.render(
+
+const root = createRoot(document.getElementById("root"));
+
+//ReactDOM.render(
+root.render(
   <Provider store={store}>
     <App
       token={fields[0]}
@@ -110,8 +117,7 @@ ReactDOM.render(
       userIP={cookieUserIP}
       sessionId={cookieSessionId}
     />
-  </Provider>,
-  document.getElementById("root")
+  </Provider>
 );
 
 // If you want your app to work offline and load faster, you can change

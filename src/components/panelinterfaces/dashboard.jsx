@@ -1,18 +1,26 @@
 import React, { Component } from "react";
 import Slider from "@material-ui/core/Slider";
-import { withStyles, makeStyles } from "@material-ui/core/styles";
 import {
-  Doughnut,
-  Bar,
-  Line,
-  Radar,
-  Pie,
-  Bubble,
   Chart,
-} from "react-chartjs-2";
+  CategoryScale,
+  LinearScale,
+  PointElement,
+  ArcElement,
+  LineElement,
+  BarElement,
+  Legend,
+  Title,
+} from "chart.js";
+import { Doughnut, Bar } from "react-chartjs-2";
 import { Container, Row, Col } from "reactstrap";
 import geoData2 from "./geoData2";
-import { topojson } from "chartjs-chart-geo";
+import {
+  BubbleMapController,
+  topojson,
+  ProjectionScale,
+  SizeScale,
+  GeoFeature,
+} from "chartjs-chart-geo";
 import ChartDataLabels from "chartjs-plugin-datalabels";
 import data from "./labels.js";
 import {
@@ -23,14 +31,28 @@ import {
   data2017,
 } from "./liveGeoData/liveGeoData";
 
-//custom plugin to center text inside dougnut
-Chart.plugins.register(ChartDataLabels);
+Chart.register(
+  CategoryScale,
+  LinearScale,
+  PointElement,
+  ArcElement,
+  LineElement,
+  BarElement,
+  Legend,
+  Title,
+  ChartDataLabels,
+  BubbleMapController,
+  ProjectionScale,
+  SizeScale,
+  GeoFeature
+);
 
-Chart.pluginService.register({
-  beforeDraw: function(chart) {
-    if (chart.config.options.elements.center) {
+Chart.register({
+  id: "dataLabels",
+  beforeDraw: (chart, args, options) => {
+    if (chart.config.options.elements && chart.config.options.elements.center) {
       // Get ctx from string
-      var ctx = chart.chart.ctx;
+      const { ctx } = chart;
 
       // Get options from the center object in options
       var centerConfig = chart.config.options.elements.center;
@@ -68,9 +90,11 @@ Chart.pluginService.register({
       }
 
       // Set font settings to draw it correctly.
-      ctx.textAlign = "center";
-      ctx.textBaseline = "middle";
-      var centerX = (chart.chartArea.left + chart.chartArea.right) / 2;
+      // ctx.textAlign = "center"
+      // ctx.textBaseline = "middle";
+      var calculatedRight = chart.chartArea.right - 60;
+      var centerX = (chart.chartArea.left + calculatedRight) / 2; //2.24 will center but not sure if it will scale
+
       var centerY = (chart.chartArea.top + chart.chartArea.bottom) / 2;
       ctx.font = fontSizeToUse + "px " + fontStyle;
       ctx.fillStyle = color;
@@ -205,7 +229,6 @@ class DashboardInterface extends Component {
     super(props);
     // console.log(props);
     //this.state.msg = props.msg;
-    console.log(this.state.elevenTwentyS);
     let cumulative = [];
     for (let i = 0; i < this.state.elevenTwentyS.length; i++) {
       cumulative.push(
@@ -233,7 +256,6 @@ class DashboardInterface extends Component {
     //example 2
     const states2 = topojson.feature(geoData2, geoData2.objects.states)
       .features;
-
     const chart3 = new Chart(
       document.getElementById("canvas3").getContext("2d"),
       {
@@ -311,7 +333,6 @@ class DashboardInterface extends Component {
         },
       }
     );
-    console.log(chart3);
     this.setState({ chart3 });
   }
   valuetext = (value) => {
@@ -347,7 +368,6 @@ class DashboardInterface extends Component {
     let geoHeight = null;
     if (document.getElementsByClassName("geoMapDiv")[0]) {
       geoHeight = document.getElementsByClassName("geoMapDiv")[0].clientHeight;
-      console.log(geoHeight);
     }
     return (
       <div
@@ -448,11 +468,12 @@ class DashboardInterface extends Component {
                   options={{
                     responsive: true,
                     maintainAspectRatio: false,
-                    title: {
-                      display: "true",
-                      text: "K1-Trends",
-                    },
+
                     plugins: {
+                      title: {
+                        display: "true",
+                        text: "K1-Trends",
+                      },
                       datalabels: {
                         display: false,
                       },
@@ -514,7 +535,6 @@ class DashboardInterface extends Component {
                   marks={marks}
                   onChangeCommitted={(event, value) => {
                     let dataSet = this.state.geoChartData[value];
-                    console.log(dataSet);
                     let chart3 = this.state.chart3;
 
                     chart3.data.datasets = [
@@ -544,7 +564,6 @@ class DashboardInterface extends Component {
                     labels: ["< 5", "6-15", "16-50", "> 50"],
                     datasets: [
                       {
-                        label: "My First dataset",
                         backgroundColor: [
                           "rgba(255, 99, 132)",
                           "rgba(54, 162, 235)",
@@ -556,18 +575,20 @@ class DashboardInterface extends Component {
                       },
                     ],
                   }}
-                  // height={}
                   options={{
                     responsive: true,
                     maintainAspectRatio: true,
-
+                    aspectRatio: 2,
                     plugins: {
+                      title: {
+                        display: "true",
+                        text: "Number of Investors in Pass Through Entity",
+                      },
                       datalabels: {
                         display: false,
-                        // align: "top",
-                        // formatter: (v) => {
-                        //   return v.description;
-                        // },
+                        legend: {
+                          display: true,
+                        },
                         color: "black",
                         labels: {
                           title: {
@@ -575,9 +596,6 @@ class DashboardInterface extends Component {
                               weight: "bold",
                             },
                           },
-                          // value: {
-                          //   color: "green",
-                          // },
                         },
                       },
                     },
@@ -590,12 +608,6 @@ class DashboardInterface extends Component {
                         minFontSize: 25, // Default is 20 (in px), set to false and text will not wrap.
                         lineHeight: 25, // Default is 25 (in px), used for when text wraps
                       },
-                    },
-                    //textDirection: "ltr",
-                    //display: false,
-                    title: {
-                      display: "true",
-                      text: "Number of Investors in Pass Through Entity",
                     },
                   }}
                 />
