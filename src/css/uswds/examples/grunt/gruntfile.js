@@ -25,7 +25,8 @@ const sassConfig = {
     options: {
       style: 'nested',
       includePaths: [
-        'node_modules/uswds/src/stylesheets',
+        //'node_modules/uswds/src/stylesheets',
+        '../../src/stylesheets',
       ],
     },
   },

@@ -51,7 +51,6 @@
     "redux": "^5.0.1",
     "tippy.js": "^4.3.5",
     "typescript": "^5.5.4",
-    "uswds": "^1.6.9",
     "xlsx": "^0.18.5"
   },
   "scripts": {
